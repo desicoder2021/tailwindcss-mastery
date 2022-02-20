@@ -8,21 +8,34 @@
     <title>Tailwind CSS Mastery</title>
   </head>
   <body class="debug-screens">
-    <div>
+    <div class="bg-gradient-to-tr from-white to-gray-200">
+      <!-- Left square decoration -->
+      <div class="absolute top-5 left-5">
+        <div
+          class="w-32 h-32 absolute top-5 bg-gradient-to-br from-red-100 to-red-200 opacity-40 md:w-44 md:h-44"
+        ></div>
+        <div
+          class="w-32 h-32 absolute left-10 top-10 bg-gradient-to-br from-green-100 to-green-200 opacity-40 md:w-44 md:h-44"
+        ></div>
+        <div
+          class="w-32 h-32 absolute left-20 top-0 bg-gradient-to-br from-purple-100 to-purple-200 opacity-40 md:w-44 md:h-44"
+        ></div>
+      </div>
+
       <!-- Header and Navigation starts -->
       <section class="text-gray-700 border-b border-gray-200">
         <div
           class="container mx-auto flex flex-col md:flex-row items-center p-5"
         >
           <!-- Left header section -->
-          <a href="#" class="mb-4 md:mb-0"
+          <a href="#" class="mb-4 md:mb-0 z-30"
             ><span class="font-bold text-xl text-green-700 tracking-wide"
               >tailwindcss mastery</span
             ></a
           >
 
           <!-- Right header section -->
-          <nav class="md:ml-auto space-x-4">
+          <nav class="md:ml-auto space-x-4 z-10">
             <a href="#" class="hover:text-gray-900">About</a>
             <a href="#" class="hover:text-gray-900">What You'll learn</a>
             <a href="#" class="hover:text-gray-900">Pricing</a>
@@ -51,33 +64,35 @@
       <!-- Hero Section Starts -->
       <section>
         <!-- Main Container -->
-        <div class="container relative mx-auto">
+        <div class="container relative mx-auto mt-10 sm:mt-0">
           <!-- Left sub container -->
-          <div class="absolute top-56 left-0 w-1/2 z-30">
+          <div
+            class="relative sm:absolute xl:top-56 md:top-36 sm:top-20 px-4 lg:px-0 left-0 sm:w-1/2 z-30"
+          >
             <h1
-              class="font-black text-7xl leading-none tracking-wider mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500"
+              class="font-black text-4xl leading-none tracking-wider mb-2 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 lg:text-6xl xl:text-7xl"
             >
-              tailwindcss <br />
+              tailwindcss <br class="hidden sm:block" />
               mastery
             </h1>
-            <p class="text-gray-600 text-lg">
-              Make good looking website quickly.<br />
+            <p class="text-gray-600 text-sm mb-4 sm:mb-0 md:text-base">
+              Make good looking website quickly.<br class="hidden sm:block" />
               All with using tailwind css classes.
             </p>
           </div>
 
           <!-- Right sub container -->
-          <div class="float-right relative w-2/3">
+          <div class="float-none sm:float-right relative sm:w-1/2 lg:w-2/3">
             <h3
-              class="font-black text-blue-500 text-5xl absolute right-0 top-56 z-30 transform rotate-90"
+              class="font-black text-blue-500 absolute right-0 z-30 transform rotate-90 hidden lg:block xl:top-56 lg:top-44 xl:text-5xl lg:text-4xl"
             >
               upto 99%
             </h3>
             <div
-              class="absolute left-0 bottom-0 w-full h-16 z-30 flex items-center justify-center mb-32"
+              class="absolute left-0 bottom-0 w-full h-16 z-30 flex items-center justify-center mb-16 sm:mb-10 lg:mb-24 xl:mb-32"
             >
               <span
-                class="bg-black hover:bg-white text-white hover:text-black uppercase font-black cursor-pointer px-6 py-2 rounded-full text-2xl transition duration-500"
+                class="bg-black hover:bg-white text-white hover:text-black uppercase font-black cursor-pointer px-6 py-2 rounded-full text-sm transition duration-500 xl:text-2xl"
                 >Get the Course</span
               >
             </div>
@@ -85,11 +100,11 @@
             <img
               src="images/tail.jpg"
               alt="tialwindcss mastery"
-              class="absolute top-0 right-0 w-full h-full object-cover z-10"
+              class="absolute top-0 right-0 w-11/12 h-full object-cover z-10 sm:w-full"
             />
             <div class="bg-gray-500 absolute inset-0 mt-16 -ml-8"></div>
             <svg
-              class="relative z-20 -ml-16"
+              class="relative z-20 ml-1 sm:-ml-16"
               data-name="Capa 1"
               viewbox="0 0 428.29 298.11"
               xmlns="http://www.w3.org/2000/svg"
